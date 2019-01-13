@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with image 1`] = `
+<div
+  className="Image-wrapper"
+>
+  <div
+    className="Image"
+    style={
+      Object {
+        "backgroundImage": "url(image-url)",
+      }
+    }
+  >
+    <div>
+      badge
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders without image 1`] = `
+<div>
+  badge
+</div>
+`;

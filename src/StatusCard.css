@@ -1,0 +1,17 @@
+.Card-wrapper {
+  align-items: center;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  display: grid;
+  height: 50px;
+  min-width: 100px;
+  max-width: 178px;
+}
+
+.Card-wrapper-with-image {
+  grid-template-columns: 56px auto;
+}
+
+.Card-wrapper-without-image {
+  grid-template-columns: 32px auto;
+}

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with wrapper 1`] = `
+<div
+  className="Badge-wrapper"
+>
+  <div
+    className="Badge"
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`renders without wrapper 1`] = `
+<div
+  className="Badge Badge-inside-image"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+/>
+`;

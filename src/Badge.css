@@ -1,0 +1,16 @@
+.Badge-wrapper {
+  padding: 21px 12px;
+}
+
+.Badge {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.Badge-inside-image {
+  border: 2px solid white;
+  position: absolute;
+  right: -2px;
+  top: 20px;
+}

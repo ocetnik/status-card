@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import StatusCard from './StatusCard';
 
-export default App;
+const useForceUpdate = () => {
+  const [, setValue] = useState({});
+  return () => setValue({});
+};
+
+export default () => {
+  const forceUpdate = useForceUpdate();
+
+  useEffect(() => {
+    window.addEventListener('resize', forceUpdate);
+    return () => {
+      window.removeEventListener('resize', forceUpdate);
+    };
+  });
+
+  return (
+    <StatusCard
+      circleColor="#00bd41"
+      imageUrl="http://www.avatarsdb.com/avatars/andy_warhol.jpg"
+      title="Andy Warhol"
+      subtitle="Online | 12h"
+    />
+  );
+};

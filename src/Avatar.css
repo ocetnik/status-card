@@ -1,0 +1,12 @@
+.Image-wrapper {
+  padding: 10px 12px;
+}
+
+.Image {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
